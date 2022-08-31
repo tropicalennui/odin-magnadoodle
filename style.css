@@ -15,3 +15,12 @@ body {
 .box {
 	border: 2px solid purple;
 }
+
+.on {
+	background-color: antiquewhite;
+}
+
+.off {
+	background-color: #212121;
+	transition: background-color 2s
+}
