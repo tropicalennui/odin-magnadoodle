@@ -1,5 +1,6 @@
 :root {
-	--input: 6;
+	--input: 0;
+	--pageSize: 800px;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 	height: 97vh;
 	justify-content: center;
 	align-content: center;
-	border: 2px solid lime;
+	align-items: center;
 }
 
 #change-grid {
@@ -23,9 +24,12 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(var(--input), 100px);
-	grid-template-rows: repeat(var(--input), 100px);
+	grid-template-columns: repeat(var(--input), 1fr);
+	grid-template-rows: repeat(var(--input), 1fr);
 	justify-content: center;
+	height: var(--pageSize);
+	width: var(--pageSize);
+	border: 2px solid lime;
 }
 
 .box {

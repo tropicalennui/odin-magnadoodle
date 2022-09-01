@@ -12,7 +12,7 @@ function createGrid(num) {
 
 }
 
-createGrid(5);
+createGrid(16);
 
 document.querySelectorAll('.box').forEach(box => {
 	box.addEventListener('mouseover', event => {
