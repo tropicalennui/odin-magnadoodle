@@ -1,3 +1,7 @@
+:root {
+	--input: 6;
+}
+
 body {
 	background-color: #212121;
 	margin: auto;
@@ -19,8 +23,8 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: 100px 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px 100px;
+	grid-template-columns: repeat(var(--input), 100px);
+	grid-template-rows: repeat(var(--input), 100px);
 	justify-content: center;
 }
 

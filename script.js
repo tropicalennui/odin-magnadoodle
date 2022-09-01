@@ -1,15 +1,18 @@
 function createGrid(num) {
-	num = num * num;
+	numDivs = num * num;
 	const container = document.querySelector('.container');
 
-	for (x = 0; x < num; x++) {
+	for (x = 0; x < numDivs; x++) {
 		const box = document.createElement('div');
 		box.classList.add('box');
 		container.appendChild(box);
 	}
+
+	document.documentElement.style.setProperty('--input', num);
+
 }
 
-createGrid(4);
+createGrid(5);
 
 document.querySelectorAll('.box').forEach(box => {
 	box.addEventListener('mouseover', event => {
