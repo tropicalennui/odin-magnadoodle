@@ -1,6 +1,6 @@
 :root {
 	--input: 0;
-	--pageSize: 800px;
+	--gridSize: 800px;
 }
 
 body {
@@ -27,13 +27,12 @@ body {
 	grid-template-columns: repeat(var(--input), 1fr);
 	grid-template-rows: repeat(var(--input), 1fr);
 	justify-content: center;
-	height: var(--pageSize);
-	width: var(--pageSize);
-	border: 2px solid lime;
+	height: var(--gridSize);
+	width: var(--gridSize);
 }
 
 .box {
-	border: 2px solid purple;
+	border: 1px solid purple;
 }
 
 .on {
@@ -42,5 +41,5 @@ body {
 
 .off {
 	background-color: #212121;
-	transition: background-color 2s
+	transition: background-color 4s
 }
