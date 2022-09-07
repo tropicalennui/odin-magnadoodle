@@ -7,8 +7,15 @@ function deleteGrid() {
 
 function changeGrid() {
 	let newNum = prompt('How many squares per side?');
+
+	if (newNum < 1 || newNum > 100) {
+		alert('Make sure the value is between 1 and 100');
+		return;
+	}
+
 	deleteGrid();
 	createGrid(newNum);
+
 }
 
 function createGrid(num) {
